@@ -8,7 +8,20 @@ const initialState = {
     error: null, // Store any errors during data fetching
 };
 
-const useWeatherStore = create((set) => ({
+type State = {
+    city: string; // Store the current city
+    weatherData: any; // Store the fetched weather data
+    loading: boolean; // Flag for loading state
+    error: any; // Store any errors during data fetching
+}
+
+type Action = {
+    fetchWeather: () => void
+    setCity: (city: string) => void
+};
+
+
+const useWeatherStore = create<State & Action>((set) => ({
     ...initialState,
     setCity: (city) => set({ city }),
     fetchWeather: async () => {

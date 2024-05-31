@@ -24,7 +24,7 @@ export const Zust = () => {
     return (
         <div className="App">
             <h1>Weather App</h1>
-            <Group align="center" justify="space-between" mt="md" mb="xs">
+            <Group align="center" mt="md" mb="xs">
                 <TextInput
                     type="text"
                     value={searchTerm}

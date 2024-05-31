@@ -21,10 +21,9 @@ const WeatherDisplay = () => {
         return (
             <Grid>
                 <Grid.Col span={2}>
-                    <Card shadow="sm" padding="lg" radius="md" withBorder>
+                    <Card shadow="sm" radius="md" withBorder>
                         <Group
                             align="center"
-                            justify="space-between"
                             mt="md"
                             mb="xs"
                         >
@@ -33,7 +32,6 @@ const WeatherDisplay = () => {
                         </Group>
                         <Group
                             align="center"
-                            justify="space-between"
                             mt="md"
                             mb="xs"
                         >
@@ -42,7 +40,6 @@ const WeatherDisplay = () => {
                         </Group>
                         <Group
                             align="center"
-                            justify="space-between"
                             mt="md"
                             mb="xs"
                         >
